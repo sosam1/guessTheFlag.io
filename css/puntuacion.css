@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/HD-wallpaper-world-flags-blue-england-flag-flagblanc-grunge-red-roug-spain.jpg);
+
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor{
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    background-color: #FFFFFF;
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    animation: rotate 2000ms ease;
+}
+
+.titulo{
+    margin: 50px 50px 30px 50px;
+    font-family: 'Bungee Spice', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 32px;
+}
+
+.opciones-container{
+    display: flexbox;
+    justify-content: center;
+    margin: auto;
+    width: 400px;
+    height: 350px;
+}
+
+.opcion-de-juego{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    height: 60px;
+    border-radius: 2px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*botones */
+
+.boton-opcion {
+    appearance: button;
+    background-color: #1899D6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: din-round,sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 13px 16px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 100%;
+  }
+  
+  .boton-opcion:after {
+    background-clip: padding-box;
+    background-color: #1CB0F6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+  
+  .boton-opcion:main,
+  .boton-opcion:focus {
+    user-select: auto;
+  }
+  
+  .boton-opcion:hover:not(:disabled) {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+  }
+  
+  .boton-opcion:disabled {
+    cursor: auto;
+  }
+
+  #puntuacion{
+    margin: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  #max-score{
+    margin: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .flag-played-container{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    width: 500px;
+    height: 400px;
+    margin: 50px;
+    padding-top: 20px;
+    background-color: #1CB0F6;
+    overflow-y: scroll;
+    animation: rotate 2000ms ease;
+  }
+
+  .flag-played-container img{
+    max-width: 100%;
+    }
+
+  /*keyframe*/
+
+  @keyframes rotate {
+
+    from{
+      transform: rotateZ(360deg);
+      opacity: 0.1;
+    }
+    
+  }
+
+  /*responsive*/
+
+  @media only screen and (max-width: 320px) {
+
+    .contenedor{
+      width: 250px;
+    }
+
+    .titulo{
+      font-size: 22px;
+      margin: 50px 0px 20px 0px;
+
+    }
+
+    .opciones-container{
+      width: 200px;
+    }
+
+    .boton-opcion{
+      height: 45px;
+    }
+
+    #puntuacion{
+      font-size: 25px;
+    }
+
+    #max-score{
+      font-size: 20px;
+    }
+
+  }
+
+  @media only screen and (min-width: 375px) and (max-width: 425px) {
+
+    .contenedor{
+      width: 300px;
+    }
+
+    .titulo{
+      font-size: 25px;
+      margin: 50px 0px 20px 0px;
+
+    }
+
+    .opciones-container{
+      width: 200px;
+    }
+
+    .boton-opcion{
+      height: 45px;
+    }
+
+    #puntuacion{
+      font-size: 25px;
+    }
+
+    #max-score{
+      font-size: 20px;
+    }
+
+  }
+
+  @media only screen and (min-width: 768px) {
+
+
+  } 

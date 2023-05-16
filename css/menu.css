@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/HD-wallpaper-world-flags-blue-england-flag-flagblanc-grunge-red-roug-spain.jpg);
+
+}
+
+.main{
+    display: block;
+    justify-content: center;
+}
+
+.contenedor{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    width: 500px;
+    height: 520px;
+    border-radius: 10px;
+    animation: side-to-side 1000ms ease;
+}
+
+.titulo-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.titulo{
+    font-family: 'Bungee Spice', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 26px;
+}
+
+.opciones-container{
+    display: flexbox;
+    justify-content: center;
+    margin: auto;
+    width: 400px;
+    height: 350px;
+}
+
+.opcion-de-juego{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    height: 60px;
+    border-radius: 2px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* CSS */
+.boton-opcion {
+  appearance: button;
+  background-color: #1899D6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.boton-opcion:after {
+  background-clip: padding-box;
+  background-color: #1CB0F6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+
+.boton-opcion:focus {
+  user-select: auto;
+}
+
+.boton-opcion:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+.boton-opcion:disabled {
+  cursor: auto;
+}
+
+.modo-container{
+  text-align: center;
+}
+
+span{
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*intento keyframe*/
+
+@keyframes side-to-side{
+
+  from{
+    transform: translateX(-50vw);
+    opacity: 0.01;
+  }
+
+  to{
+    transform: translateX(0);
+  }
+
+}
+
+/* responsive */
+
+@media only screen and (max-width: 320px) {
+
+  /* diseño en el menu */
+
+  .contenedor{
+      width: 300px;
+      height: 500px;
+  }
+
+  .titulo{
+      font-size: 20px;
+  }
+
+  .opciones-container{
+    width: 250px;
+  }
+
+}
+
+@media only screen and (min-width: 375px) and (max-width: 425px) {
+
+  .contenedor{
+      width: 300px;
+      height: 480px;
+  }
+
+  .titulo{
+      font-size: 22px;
+  }
+
+  .opciones-container{
+    width: 250px;
+  }
+
+}
+

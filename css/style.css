@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/HD-wallpaper-world-flags-blue-england-flag-flagblanc-grunge-red-roug-spain.jpg);
+}
+
+.main{
+    display: block;
+    justify-content: center;
+}
+
+.contenedor{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    width: 500px;
+    height: 700px;
+    border-radius: 20px;
+}
+
+.titulo-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.titulo-container p{
+    font-size: 35px;
+}
+
+.puntuacion{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0px 100px 0px 100px;
+}
+
+.timmer{
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container-image{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 300px;
+    height: 220px;
+    border: solid 0.5px #000000;
+}
+
+#flag-img{
+    width: 100%;
+    height: 100%;
+    -webkit-user-drag: none;
+}
+
+#opciones-respuesta-container{
+    display: grid;
+}
+
+.btn-opcion{
+    width: 350px;
+    height: 50px;
+    margin: auto;
+    margin-top: 35px;
+    border-radius: 8px;
+    border: solid 1px black;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 19px;
+    font-weight: bold;
+    color: black;
+    text-transform: capitalize;
+}
+
+.btn-opcion:disabled{
+    font-weight: bold;
+    color: black;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 320px) {
+
+    .contenedor{
+        width: 300px;
+        height: 580px;
+    }
+
+    .container-image{
+        width: 230px;
+        height: 170px;
+    }
+    
+    .titulo-container{
+        width: 300px;
+    }
+
+    .puntuacion{
+        margin: 15px 50px 0px 0px;
+    }
+
+    .contador{
+        margin: 15px 0px 0px 0px;
+    }
+
+    .titulo-container p{
+        font-size: 20px;
+    }
+
+    .timmer{
+        font-size: 25px;
+        margin: 0px 0px 10px 0px;
+    }
+    
+    .btn-opcion{
+        width: 220px;
+        height: 35px;
+        margin: auto;
+        margin-top: 25px;
+        font-size: 14px;
+    }
+    
+
+  }
+
+  @media only screen and (min-width: 375px) and (max-width: 425px) {
+
+    .contenedor{
+        width: 320px;
+        height: 600px;
+    }
+  
+    .container-image{
+        width: 260px;
+        height: 180px;
+    }
+    
+    .titulo-container{
+        width: 300px;
+    }
+
+    .puntuacion{
+        font-size: 25px;
+        margin: 20px 10px 0px 0px;
+    }
+
+    .contador{
+        font-size: 25px;
+        margin: 20px 0px 0px 25px
+    }
+
+    .timmer{
+        font-size: 30px;
+        margin: 0px 0px 10px 0px;
+    }
+
+    .btn-opcion{
+        width: 250px;
+        height: 35px;
+        margin: auto;
+        margin-top: 25px;
+        font-size: 16px;
+    }
+
+    .titulo-container p{
+        font-size: 24px;
+    }
+
+  }
+
+@media only screen and (min-width: 768px) {
+
+    .contenedor{
+        width: 500px;
+        height: 750px;
+    }
+  
+    .titulo{
+        font-size: 19px;
+        width: 500px;
+    }
+
+    .container-image{
+        width: 350px;
+    }
+    
+    .titulo-container{
+        width: 500px;
+    }
+
+    .puntuacion{
+        font-size: 50px;
+        margin: 20px 20px 0px 0px
+    }
+
+    .contador{
+        font-size: 50px;
+        margin: 20px 0px 0px 15px
+    }
+
+    .timmer{
+        margin: 0px 0px 10px 0px;
+        font-size: 3rem;
+    }
+    
+
+  } 
