@@ -8,7 +8,7 @@ arrayPaisesJugados.forEach(element => {
     contenedorDeBanderasJugadas.innerHTML += `
     
     <h3>${element.commonName}(${element.capital})</h3>
-    <img src="${element.flag}">
+    <img class="img" src="${element.flag}">
     
     `
 

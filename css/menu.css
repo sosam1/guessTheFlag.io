@@ -25,9 +25,9 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #FFFFFF;
-    width: 500px;
+    width: 400px;
     height: 520px;
-    border-radius: 10px;
+    border-radius: 15px;
     animation: side-to-side 1000ms ease;
 }
 
@@ -156,15 +156,13 @@ span{
 
 @media only screen and (max-width: 320px) {
 
-  /* diseño en el menu */
-
   .contenedor{
       width: 300px;
-      height: 500px;
+      height: 520px;
   }
 
   .titulo{
-      font-size: 20px;
+      font-size: 30px;
   }
 
   .opciones-container{
@@ -177,11 +175,11 @@ span{
 
   .contenedor{
       width: 300px;
-      height: 480px;
+      height: 520px;
   }
 
   .titulo{
-      font-size: 22px;
+      font-size: 30px;
   }
 
   .opciones-container{

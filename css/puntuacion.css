@@ -141,11 +141,17 @@ body {
     background-color: #1CB0F6;
     overflow-y: scroll;
     animation: rotate 2000ms ease;
+    border-radius: 20px;
   }
 
   .flag-played-container img{
     max-width: 100%;
-    }
+    
+  }
+
+  .img{
+    -webkit-user-drag: none;
+  }
 
   /*keyframe*/
 
@@ -162,8 +168,17 @@ body {
 
   @media only screen and (max-width: 320px) {
 
+    .main{
+      display: block;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
     .contenedor{
       width: 250px;
+      height: 400px;
+      margin-top: 140px;
     }
 
     .titulo{
@@ -188,12 +203,26 @@ body {
       font-size: 20px;
     }
 
+    .flag-played-container{
+      width: 250px;
+      padding: 25px;
+    }
+
   }
 
   @media only screen and (min-width: 375px) and (max-width: 425px) {
 
+    .main{
+      display: block;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
     .contenedor{
+      margin-top: 150px;
       width: 300px;
+      height: 370px;
     }
 
     .titulo{
@@ -216,6 +245,12 @@ body {
 
     #max-score{
       font-size: 20px;
+    }
+
+    .flag-played-container{
+      width: 300px;
+      padding: 25px;
+      height: 270px;
     }
 
   }

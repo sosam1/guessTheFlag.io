@@ -46,7 +46,7 @@ opcion3.addEventListener("click", function(){
 
 opcion4.addEventListener("click", function(){
 
-    localStorage.setItem("modo de juego", "contrareloj")
+    localStorage.setItem("modo de juego", "?")
     localStorage.setItem("puntuacion", 0)
     categoriaDeJuego()
 })

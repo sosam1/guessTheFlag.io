@@ -197,7 +197,7 @@ let tiempoContrareloj = 15
     }
 
     //Uso esta funcion para que repita conteo() cada segundo
-    if(modoDeJuego == "contrareloj"){
+    if(modoDeJuego == "?"){
         let temporizador = setInterval(() =>{
             conteo()
         }, 1000)
