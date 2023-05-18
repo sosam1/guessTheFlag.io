@@ -1,5 +1,4 @@
 let arrayPaisesJugados = JSON.parse(localStorage.getItem("paisesJugados"))
-console.log(arrayPaisesJugados)
 
 let contenedorDeBanderasJugadas = document.getElementById("flags-container")
 

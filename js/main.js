@@ -1,8 +1,9 @@
 let modoDeJuego = localStorage.getItem("modo de juego")
 let respuestasCorrectas = 0
 let respuestasIncorrectas = 0
-let cuentaBanderas = 0
+let cuentaBanderas = 1
 let paisesJugados = []//para mostrar al final
+
 ///se aumentan en la funcion validarRespuesta()
 
 function logicaDelJuego(){
@@ -146,7 +147,7 @@ function logicaDelJuego(){
             }
 
             //reinicia el juego o lo termina segun corresponda
-            if(cuentaBanderas >= modoDeJuego){
+            if(cuentaBanderas > modoDeJuego){
                 setTimeout(function () {
                     localStorage.setItem("paisesJugados", JSON.stringify(paisesJugados))
                     window.location.href = "puntuacion.html"
