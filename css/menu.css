@@ -40,7 +40,7 @@ body {
 }
 
 .titulo{
-    font-family: 'Bungee Spice', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 26px;
 }
 
@@ -135,6 +135,7 @@ span{
   border-radius: 5px;
   font-size: 20px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
 }
 
 /*intento keyframe*/
