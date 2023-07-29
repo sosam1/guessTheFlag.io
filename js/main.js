@@ -10,17 +10,14 @@ function logicaDelJuego(){
     let paisAlAzarCorrecto = countries[Math.floor(Math.random() * countries.length)]
     let nombreDelPaisCorrecto = paisAlAzarCorrecto.commonName
     let capitalDelPaisCorrecto = paisAlAzarCorrecto.capital
+    let continenteDelPaisCorrecto = paisAlAzarCorrecto.continent
     let opcionesDeRespuesta = [paisAlAzarCorrecto] 
 
     function generarOpcionesDeRespuesta(){
         countries.splice(countries.indexOf(paisAlAzarCorrecto), 1)
         for(i=1;opcionesDeRespuesta.length<4;i++){
-        pais = countries[Math.floor(Math.random() * countries.length)]
-
-        do{
-            pais = countries[Math.floor(Math.random() * countries.length)]
-        }while(pais.continent != paisAlAzarCorrecto.continent)
-
+        let opcionesProbales = countries.filter(pais => pais.continent == continenteDelPaisCorrecto) 
+        pais = opcionesProbales[Math.floor(Math.random() * opcionesProbales.length)]
         opcionesDeRespuesta.push(pais)
         countries.splice(countries.indexOf(pais), 1)
         }
