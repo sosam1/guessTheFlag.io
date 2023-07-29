@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="./img/logo.png.jpg" />
+    <title>Guess the Flag | Menú principal</title>
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/fuentes.css">
+    <link rel="shortcut icon" href="./img/logo.png.jpg" type="image/x-icon">
+</head>
+<body>
+    
+    <div class="main">     
+        <div class="contenedor">
+            <div class="titulo-container">
+                <h1 class="titulo">Main Menu</h1>
+            </div> 
+            <div class="opciones-container">
+                <div class="opcion-de-juego" id="opcion0"><button class="boton-opcion" onclick="irAlJuego()">10 Flags</button></div>
+                <div class="opcion-de-juego" id="opcion1"><button class="boton-opcion" onclick="irAlJuego()">20 Flags</button></div>
+                <div class="opcion-de-juego" id="opcion2"><button class="boton-opcion" onclick="irAlJuego()">50 Flags</button></div>
+                <div class="opcion-de-juego" id="opcion3"><button class="boton-opcion" onclick="irAlJuego()">Hardcore (1 fail)</button></div>
+                <div class="opcion-de-juego" id="opcion4"><button class="boton-opcion" onclick="irAlJuego()">time trial</button></div>
+                <div class="modo-container">
+                    <label for="modo-pais">
+                        <input id="modo-pais" class="radio" name="modo-de-juego" type="radio" checked>
+                        <span>Countries</span>  
+                    </label>
+                    
+                    <label for="modo-capital">
+                        <input id="modo-capital" class="radio" name="modo-de-juego" type="radio">
+                        <span class="span-radio">Capitals</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/menu.js"></script>
+</body>
+</html>

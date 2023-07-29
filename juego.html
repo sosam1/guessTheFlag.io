@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Flag</title>
+    <link rel="shortcut icon" href="./img/logo.png.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fuentes.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+  </head>
+</head>
+<body>
+    
+    <div class="main">  
+        <div class="contenedor">
+            <div class="titulo-container">
+                <p class="puntuacion" id="score">Score: 0</p>
+                <p class="contador" id="contador-de-banderas"></p>
+            </div>
+
+            <div id="timmer-container" class="timmer"></div>
+            
+            <div class="container-image">
+                <img id="flag-img" src="" alt="Bandera para adivinar">
+            </div>
+
+            <div id="opciones-respuesta-container" class="opciones-respuesta-container"></div>
+        </div>
+    </div>
+    
+    <script src="./js/api.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
