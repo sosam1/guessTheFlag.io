@@ -151,6 +151,11 @@ body {
 
   .img{
     -webkit-user-drag: none;
+<<<<<<< HEAD
+=======
+    border-radius: 10px;
+
+>>>>>>> master
   }
 
   /*keyframe*/

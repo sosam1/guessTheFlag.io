@@ -11,17 +11,28 @@ function logicaDelJuego(){
     let paisAlAzarCorrecto = countries[Math.floor(Math.random() * countries.length)]
     let nombreDelPaisCorrecto = paisAlAzarCorrecto.commonName
     let capitalDelPaisCorrecto = paisAlAzarCorrecto.capital
+<<<<<<< HEAD
     let opcionesDeRespuesta = [paisAlAzarCorrecto] 
+=======
+    let continenteDelPaisCorrecto = paisAlAzarCorrecto.continent
+    let opcionesDeRespuesta = [paisAlAzarCorrecto] 
+    console.log(continenteDelPaisCorrecto)
+>>>>>>> master
 
     function generarOpcionesDeRespuesta(){
         countries.splice(countries.indexOf(paisAlAzarCorrecto), 1)
         for(i=1;opcionesDeRespuesta.length<4;i++){
+<<<<<<< HEAD
         pais = countries[Math.floor(Math.random() * countries.length)]
 
         do{
             pais = countries[Math.floor(Math.random() * countries.length)]
         }while(pais.continent != paisAlAzarCorrecto.continent)
 
+=======
+        let opcionesProbales = countries.filter(pais => pais.continent == continenteDelPaisCorrecto) 
+        pais = opcionesProbales[Math.floor(Math.random() * opcionesProbales.length)]
+>>>>>>> master
         opcionesDeRespuesta.push(pais)
         countries.splice(countries.indexOf(pais), 1)
         }
@@ -161,8 +172,13 @@ function logicaDelJuego(){
     }
 
     generarOpcionesDeRespuesta()
+<<<<<<< HEAD
     generarBotonesDeRespuesta()
     cargarBanderaPais()
+=======
+    cargarBanderaPais()
+    generarBotonesDeRespuesta()
+>>>>>>> master
 
     function reiniciar(){
         setTimeout(function () {
